@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+  <link rel="stylesheet"  href="style.css">
+    
+  <title>Skill Safari | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+    <div class="container">
+      <header>
+        <h1>
+          <span>ROCK</span>
+          <span>PAPER</span>
+          <span>SCISSORS</span>
+        </h1>
+        <div class="score-container">
+          <h4>SCORE</h4>
+          <p id="score" class="">0</p>
+        </div>
+      </header>
+       <main id="main">
+          <button class="btn-circle btn-paper pick" data-choice="paper">
+           <span class="wrap"><img src="Images/icon-paper.svg" alt="Paper-icon"></span> 
+          </button>
+          <button class="btn-circle btn-scissors pick" data-choice="scissors">
+            <span class="wrap"><img src="Images/icon-scissors.svg" alt="Scissors-icon"></span>
+          </button>
+          <button class="btn-circle btn-rock pick" data-choice="rock">
+            <span class="wrap"><img src="Images/icon-rock.svg" alt="Rock-icon"></span>
+          </button>
+        </main>  
+        
+        <div class="rules-modal" id="modal">
+          <span class="rule">RULES</span>
+           <img src="Images/image-rules.svg" alt="rules">
+           <button id="close"><img src="Images/icon-close.svg" alt="close"></button>
+        </div>
+        <button class="btn-rules" id="open">Rules</button>
+    </div>
+    
+    <div class="selection" id="selection">
+      <div id="picked">
+        <h2>YOU PICKED</h2>
+        <button class="btn-circle btn-paper" id="user_select">
+          <span class="wrap"><img src="Images/icon-paper.svg" alt="Paper-icon"></span> 
+         </button>
+      </div>
+      <div class="go-down">
+        <p class="big-text">
+          <span id="win">YOU WIN</span>
+        </p>
+        <button class="btn" id="reset">PLAY AGAIN</button>
+      </div>
+      <div id="mouse-picked">
+        <h2>THE MOUSE PICKED</h2>
+        <button class="btn-circle btn-rock" id="computer_select">
+          <span class="wrap"><img src="Images/icon-rock.svg" alt="Rock-icon"></span>
+        </button>
+      </div>
+    </div>
+     <script src="app.js"></script>
+</body>
+</html>
